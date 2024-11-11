@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    div{
+        display: block;
+        
+        height:50px;
+        background-color: red;
+    }
+    @media print{
+        div{
+            background-color:blue;
+        }
+    }
+    @media print and (orientation:landscape){
+        div{
+            background-color:black;
+        }
+    }
+    @media screen and (min-width:400px){/* In this the width is 0-600px when it gets 600px the h1 may change into pink*/ 
+        div{
+            background-color:pink;
+            height: 50px;
+            
+        }
+    }
+    @media screen and (min-width:600px){
+        div{
+            background-color:brown;
+             
+            height:50px;
+        }
+    }
+</style>
+<div>
+
+</div>
+</body>
+</html>
